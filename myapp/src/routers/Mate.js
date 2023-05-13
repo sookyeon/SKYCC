@@ -3,6 +3,7 @@ import axios from 'axios';
 import styled from 'styled-components';
 import MultiRadio from '../components/MultiRadio';
 import { Textarea, Button, Select, Radio, RadioGroup, Stack } from '@chakra-ui/react'
+import Man from '../img/memoji-man.png';
 
 const HomeContainer = styled.div`
   display: flex;
@@ -11,16 +12,27 @@ const HomeContainer = styled.div`
   gap: 20px;
 `;
 
-const Title = styled.h2`
-  /* styles for the title */
+const Title2 = styled.h2`
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+color: #000000;
+margin-top: 48px;
+text-align: center;
 `;
 
 const Image = styled.img`
-  /* styles for the image */
 `;
 
 const Subtitle = styled.h3`
-  /* styles for the subtitle */
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+margin-top: 24px;
+margin-bottom: 16px;
 `;
 
 const Mate = () => {
@@ -40,9 +52,10 @@ const Mate = () => {
   return (
     <div>
     <HomeContainer>
-        <Image src="path_to_your_image.jpg" alt="description of image" /> 
-        <Title>토스팀은 슬랙님이 원활하게 적응하실 수 있도록
-입사 시 메이트를 매칭해드리고 있어요</Title>
+        <Image src={Man} width='120px' display='flex' justify-content = 'center'
+ align-items= 'center'/> 
+        <Title2>코코아팀은 멜로우님이 원활하게 적응하실 수 있도록<br/>
+입사 시 메이트를 매칭해드리고 있어요</Title2>
     </HomeContainer>
     <Subtitle>직무를 선택해주세요</Subtitle>
     <Select placeholder='직무 선택하기'>

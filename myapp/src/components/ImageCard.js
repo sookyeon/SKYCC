@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Card, CardHeader, CardBody, CardFooter, Heading, Text, Divider, ButtonGroup, Button, Stack } from '@chakra-ui/react'
 
 const CardContainer = styled.div`
 display: flex;
@@ -22,7 +21,7 @@ const ImageCard = () => {
         borderRadius='lg'
       />
       <Stack mt='6' spacing='3'>
-        <Heading size='md'>Living room Sofa</Heading>
+        <Heading size='md'>금융을 간편하게</Heading>
         <Text>
           This sofa is perfect for modern tropical spaces, baroque inspired
           spaces, earthy toned spaces and for people who love a chic design with a
